@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Inicio | Reciconciencia{% endblock %}
+
+{% block contenido %}
+
+<img class="banner" src="{{ url_for('static', filename='img/inicio.jpg') }}" alt="Inicio">
+
+<section class="hero">
+    <h2>Aprende, Recicla y Transforma tu Comunidad</h2>
+    <p>El reciclaje inteligente comienza contigo</p>
+
+    <a href="/informacion" class="btn">Comenzar</a>
+</section>
+
+{% endblock %}

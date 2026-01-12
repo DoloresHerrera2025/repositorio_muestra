@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Reciconciencia{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+
+<audio autoplay loop>
+    <source src="{{ url_for('static', filename='audio/sonido.mp3') }}" type="audio/mpeg">
+    Tu navegador no soporta audio.
+</audio>
+
+<nav class="navbar">
+    <div class="logo">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo">
+        <h1>Reciconciencia</h1>
+    </div>
+
+    <ul>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/informacion">Información</a></li>
+        <li><a href="/tips">Consejos</a></li>
+        <li><a href="/contenedores">Contenedores</a></li>
+        <li><a href="/dinamicas">Dinámicas</a></li>
+    </ul>
+</nav>
+
+<main>
+    {% block contenido %}{% endblock %}
+</main>
+
+<footer>
+    <p>🌿 Reciconciencia - pagina web </p>
+</footer>
+
+</body>
+</html>

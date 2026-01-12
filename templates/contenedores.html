@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block title %}Contenedores de Reciclaje | Reciconciencia{% endblock %}
+
+{% block contenido %}
+
+<img class="banner" src="{{ url_for('static', filename='img/.png') }}" alt="Contenedores">
+
+<section class="contenedores-section">
+
+  <h1>♻️ Clasificación de Contenedores</h1>
+
+  <p class="intro">
+    Separar correctamente los residuos es una de las acciones más importantes
+    para que el reciclaje funcione. Cada contenedor está diseñado para un tipo
+    específico de residuo.
+  </p>
+
+  <div class="contenedor-card verde">
+    <h2>🟢 Contenedor Verde – Orgánicos</h2>
+    <p>
+      Aquí se depositan los residuos naturales que se descomponen fácilmente.
+      Estos materiales pueden convertirse en composta.
+    </p>
+    <ul>
+      <li>Restos de frutas y verduras</li>
+      <li>Cáscaras de huevo</li>
+      <li>Hojas y restos de jardín</li>
+      <li>Residuos de comida</li>
+    </ul>
+  </div>
+
+  <div class="contenedor-card azul">
+    <h2>🔵 Contenedor Azul – Papel y Cartón</h2>
+    <p>
+      El papel y cartón deben estar limpios y secos para ser reciclados correctamente.
+    </p>
+    <ul>
+      <li>Hojas de papel</li>
+      <li>Periódicos y revistas</li>
+      <li>Cajas de cartón</li>
+      <li>Cuadernos sin espiral</li>
+    </ul>
+  </div>
+
+  <div class="contenedor-card amarillo">
+    <h2>🟡 Contenedor Amarillo – Plásticos</h2>
+    <p>
+      Los plásticos son materiales muy comunes y tardan mucho tiempo en degradarse,
+      por lo que es importante reciclarlos.
+    </p>
+    <ul>
+      <li>Botellas de plástico</li>
+      <li>Envases de alimentos</li>
+      <li>Bolsas limpias</li>
+      <li>Tapas de plástico</li>
+    </ul>
+  </div>
+
+  <div class="contenedor-card gris">
+    <h2>⚫ Contenedor Gris – Residuos No Reciclables</h2>
+    <p>
+      Aquí se deposita la basura que no puede reciclarse ni reutilizarse.
+    </p>
+    <ul>
+      <li>Papel sanitario</li>
+      <li>Colillas de cigarro</li>
+      <li>Residuos contaminados</li>
+      <li>Objetos rotos</li>
+    </ul>
+  </div>
+
+  <div class="impact-message">
+    <h2>💚 Separar bien es cuidar el planeta</h2>
+    <p>
+      Si separas tus residuos correctamente ayudas a reducir la contaminación
+      y facilitas el proceso de reciclaje.
+    </p>
+  </div>
+
+</section>
+
+{% endblock %}

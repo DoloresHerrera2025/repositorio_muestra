@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %}Dinámicas Educativas | Reciconciencia{% endblock %}
+
+{% block contenido %}
+
+<img class="banner" src="{{ url_for('static', filename='img/dinamicas.jpg') }}" alt="Dinámicas">
+
+<section class="dinamicas-section">
+
+  <h1>🎮 Dinámicas sobre el Reciclaje</h1>
+
+  <p class="intro">
+    Aprender también puede ser divertido. Estas dinámicas ayudan a reforzar
+    el conocimiento sobre el reciclaje de manera sencilla y entretenida.
+  </p>
+
+  <div class="dinamica-card">
+    <h2>🗑️ Separa la basura</h2>
+    <p>
+      Identifica el tipo de residuo y colócalo en el contenedor correcto.
+      Esta actividad ayuda a aprender a clasificar correctamente.
+    </p>
+    <p><strong>Objetivo:</strong> Reconocer los residuos reciclables.</p>
+  </div>
+
+  <div class="dinamica-card">
+    <h2>🧠 Quiz ecológico</h2>
+    <p>
+      Responde preguntas rápidas sobre reciclaje, contaminación y cuidado ambiental.
+      Cada respuesta correcta refuerza el aprendizaje.
+    </p>
+    <p><strong>Objetivo:</strong> Evaluar conocimientos básicos.</p>
+  </div>
+
+  <div class="dinamica-card">
+    <h2>🃏 Memorama ambiental</h2>
+    <p>
+      Relaciona imágenes de residuos con su contenedor correspondiente.
+      Ideal para niños y jóvenes.
+    </p>
+    <p><strong>Objetivo:</strong> Aprender jugando.</p>
+  </div>
+
+  <div class="dinamica-card">
+    <h2>🌱 Retos ecológicos</h2>
+    <p>
+      Completa pequeños retos como reducir el uso de plástico o reciclar durante una semana.
+    </p>
+    <p><strong>Objetivo:</strong> Fomentar hábitos responsables.</p>
+  </div>
+
+  <div class="impact-message">
+    <h2>🌍 Aprender hoy para cuidar mañana</h2>
+    <p>
+      Las dinámicas ayudan a crear conciencia ambiental y promueven
+      acciones responsables desde edades tempranas.
+    </p>
+  </div>
+
+</section>
+
+{% endblock %}

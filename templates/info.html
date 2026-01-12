@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% block title %}Información Ambiental | Reciconciencia{% endblock %}
+
+{% block contenido %}
+
+<img class="banner" src="{{ url_for('static', filename='img/info.jpg') }}" alt="Información">
+
+<section class="info-section">
+
+  <h1>🌍 Información sobre el Reciclaje</h1>
+
+  <p class="intro">
+    El reciclaje es una de las acciones más importantes que podemos realizar para proteger
+    el medio ambiente. A través de este proceso se logra reducir la contaminación, conservar
+    los recursos naturales y mejorar la calidad de vida de las personas.
+  </p>
+
+  <div class="info-card">
+    <h2>♻️ ¿Qué es el reciclaje?</h2>
+    <p>
+      El reciclaje es un proceso mediante el cual los residuos que ya no utilizamos
+      se transforman en nuevos productos o materias primas.
+    </p>
+    <p>
+      Incluye etapas como recolección, separación, limpieza y transformación.
+    </p>
+  </div>
+
+  <div class="info-card">
+    <h2>📜 Breve historia del reciclaje</h2>
+    <p>
+      Desde la antigüedad las personas reutilizaban materiales por necesidad.
+      Con el crecimiento industrial, la producción de basura aumentó.
+    </p>
+    <p>
+      Hoy el reciclaje es clave para enfrentar los problemas ambientales.
+    </p>
+  </div>
+
+  <div class="info-card">
+    <h2>🌱 ¿Por qué es importante reciclar?</h2>
+    <ul>
+      <li>Reduce la contaminación</li>
+      <li>Disminuye la basura</li>
+      <li>Ahorra energía</li>
+      <li>Protege ecosistemas</li>
+    </ul>
+  </div>
+
+  <div class="info-card">
+    <h2>🚯 Consecuencias de no reciclar</h2>
+    <p>
+      La acumulación de residuos provoca contaminación, daños a la fauna
+      y problemas de salud.
+    </p>
+  </div>
+
+  <div class="info-card">
+    <h2>📦 Materiales reciclables</h2>
+    <ul>
+      <li>Papel y cartón</li>
+      <li>Plásticos</li>
+      <li>Vidrio</li>
+      <li>Metales</li>
+    </ul>
+  </div>
+
+  <div class="info-card">
+    <h2>🏠 El reciclaje en la vida diaria</h2>
+    <p>
+      Reciclar empieza en casa, en la escuela y en la comunidad.
+    </p>
+  </div>
+
+  <div class="info-card">
+    <h2>📊 Impacto ambiental positivo</h2>
+    <p>
+      Reduce emisiones contaminantes y combate el cambio climático.
+    </p>
+  </div>
+
+  <div class="info-card">
+    <h2>🧠 Educación ambiental</h2>
+    <p>
+      Informarse es el primer paso para crear conciencia ambiental.
+    </p>
+  </div>
+
+  <div class="impact-message">
+    <h2>💚 Cuidar el planeta es responsabilidad de todos</h2>
+    <p>
+      Cada acción cuenta para un futuro sostenible.
+    </p>
+  </div>
+
+</section>
+
+{% endblock %}

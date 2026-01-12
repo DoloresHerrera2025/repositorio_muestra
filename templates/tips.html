@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+
+{% block title %}Consejos de Reciclaje | Reciconciencia{% endblock %}
+
+{% block contenido %}
+
+<img class="banner" src="{{ url_for('static', filename='img/tips.jpg') }}" alt="Consejos">
+
+<section class="tips-section">
+  <h1>🌱 Consejos para un Reciclaje Responsable</h1>
+
+  <p class="intro">
+    El reciclaje es una de las acciones más sencillas y efectivas para cuidar el planeta.
+    Con pequeños cambios en nuestra vida diaria podemos reducir la contaminación,
+    ahorrar recursos naturales y crear un futuro más sostenible.
+  </p>
+
+  <div class="tip-card">
+    <h2>♻️ Separa correctamente tus residuos</h2>
+    <p>
+      Antes de tirar cualquier objeto, identifica el tipo de residuo que es.
+      Separar correctamente evita que materiales reciclables terminen en la basura común.
+    </p>
+    <ul>
+      <li>🟢 Orgánicos: restos de comida, cáscaras, residuos naturales.</li>
+      <li>🔵 Papel y cartón: hojas, cuadernos, cajas limpias.</li>
+      <li>🟡 Plásticos: botellas, envases, bolsas limpias.</li>
+      <li>⚫ No reciclables: pañales, colillas, residuos sanitarios.</li>
+    </ul>
+  </div>
+
+  <div class="tip-card">
+    <h2>Limpia los envases antes de reciclar</h2>
+    <p>
+      Los restos de comida o líquidos pueden contaminar otros materiales reciclables.
+      No es necesario gastar mucha agua, basta con enjuagar los envases.
+    </p>
+    <p>
+      Esto facilita el proceso de reciclaje y mejora la calidad del material recuperado.
+    </p>
+  </div>
+
+  <div class="tip-card">
+    <h2>Reduce antes de reciclar</h2>
+    <p>
+      El mejor residuo es el que no se genera. Antes de comprar algo nuevo,
+      pregúntate si realmente lo necesitas.
+    </p>
+    <ul>
+      <li>Evita productos con mucho empaque.</li>
+      <li>Compra a granel cuando sea posible.</li>
+      <li>Prefiere productos reutilizables.</li>
+    </ul>
+  </div>
+
+  <div class="tip-card">
+    <h2>Reutiliza siempre que puedas</h2>
+    <p>
+      Muchos objetos pueden tener una segunda vida antes de ser reciclados.
+      Reutilizar ayuda a reducir el consumo de nuevos recursos.
+    </p>
+    <ul>
+      <li>Frascos de vidrio como contenedores.</li>
+      <li>Cajas de cartón para organización.</li>
+      <li>Ropa vieja para limpieza o manualidades.</li>
+    </ul>
+  </div>
+
+  <div class="tip-card">
+    <h2>📍 Infórmate sobre puntos de reciclaje</h2>
+    <p>
+      No todos los materiales se reciclan en los mismos lugares.
+      Investiga los centros de reciclaje de tu comunidad.
+    </p>
+    <p>
+      Algunos centros reciben electrónicos, pilas, baterías, focos y aceite usado.
+    </p>
+  </div>
+
+  <div class="tip-card">
+    <h2>👨‍👩‍👧 Comparte el conocimiento</h2>
+    <p>
+      Concientizar a otras personas es tan importante como reciclar.
+      Habla con tu familia, amigos y compañeros sobre la importancia del reciclaje.
+    </p>
+    <p>
+      Juntos podemos generar un impacto positivo mucho mayor.
+    </p>
+  </div>
+
+  <div class="impact-message">
+    <h2>🌍 Pequeñas acciones, grandes cambios</h2>
+    <p>
+      Reciclar no es solo una responsabilidad, es un compromiso con el planeta
+      y con las futuras generaciones. Cada acción cuenta.
+    </p>
+  </div>
+</section>
+
+{% endblock %}
